@@ -9,10 +9,10 @@ export const tableUsersHeadCells = [
 ];
 export const tableProductHeadCells = [
   "ID",
-  "title",
-  "minimumOrderQuantity",
-  "category",
-  "price",
-  "stock",
-  "images",
+  "Title",
+  "MOQ",
+  "Category",
+  "Price",
+  "Stock",
+  "Image",
 ];

@@ -1,7 +1,9 @@
 import React from "react";
 
 const TableHeadCell = ({ children }) => {
-  return <th className="px-4 py-2 text-center">{children}</th>;
+  return (
+    <th className="p-1 flex flex-1 items-center justify-center">{children}</th>
+  );
   // <div className="px-4">{children}</div>;
 };
 
