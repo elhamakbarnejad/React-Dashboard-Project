@@ -1,4 +1,4 @@
-🔵React Dashboard Project🔵
+🔵git add README.md🔵
 
 A responsive dashboard built with React and Tailwind CSS.
 The project includes user and product tables with pagination and reusable components.
@@ -30,6 +30,13 @@ APIs Used:
 
 - https://dummyjson.com/users
 - https://dummyjson.com/products
+
+<!-- !!! Login Info !!! -->
+
+Username: emilys  
+Password: emilyspass
+
+<!-- !!! Login Info !!! -->
 
 Author:
 

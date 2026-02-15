@@ -6,7 +6,7 @@ const Table = ({
   pagination = { items: null, setItems: null, perPage: null },
 }) => {
   return (
-    <div className="w-full rounded-xl overflow-hidden flex flex-col items-center justify-center shadow-xl">
+    <table className="w-full rounded-xl overflow-hidden flex flex-col items-center justify-center shadow-xl">
       <TableHeader header={header} />
       {children}
       <TablePagination
@@ -14,7 +14,7 @@ const Table = ({
         setItems={pagination.setItems}
         perPage={pagination.perPage}
       />
-    </div>
+    </table>
   );
 };
 

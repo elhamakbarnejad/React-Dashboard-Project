@@ -15,6 +15,9 @@ const Landing = () => {
   const loginHandler = () => {
     navigate("/login");
   };
+  const goHomeHandler = () => {
+    navigate("dashboard");
+  };
   return (
     <div className="flex flex-col items-center justify-between">
       <TopbarPublic />
@@ -69,7 +72,11 @@ const Landing = () => {
             className="bg-green-500 text-rose-500"
             onclickHandler={loginHandler}
           />
-          <Button title="Book a demo" className="bg-black text-white" />
+          <Button
+            title="Book a demo"
+            className="bg-yellow-500 text-white"
+            onclickHandler={goHomeHandler}
+          />
         </div>
         <div className="*:rounded-xl xl:flex-row flex flex-col items-stretch justify-center gap-4  mx-auto w-[70%]">
           <div className="space-y-5 m-5 p-5 xl:w-1/2 w-full bg-white  flex flex-col items-center justify-between shadow relative">

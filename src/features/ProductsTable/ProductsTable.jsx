@@ -24,7 +24,7 @@ const ProductsTable = ({ allProducts }) => {
   return (
     <div className="overflow-x-auto">
       <Table
-        className="w-full table-fixed"
+        className="w-full table-fixed border-collapse"
         header={{ title: "Products", LinkBtn: Button }}
         pagination={{
           items: allProducts.products,
@@ -47,11 +47,11 @@ const ProductsTable = ({ allProducts }) => {
               <TableRowCell>{product?.price}</TableRowCell>
               <TableRowCell>{product?.stock}</TableRowCell>
               <TableRowCell>
-                <div className="w-10 h-10 flex items-center justify-center">
+                <div className="w-10 h-10 mx-auto">
                   <img
                     src={product?.thumbnail}
                     alt="Image"
-                    className="rounded-full object-cover"
+                    className="w-full h-full rounded-full object-cover"
                   />
                 </div>
               </TableRowCell>
