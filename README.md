@@ -31,12 +31,10 @@ APIs Used:
 - https://dummyjson.com/users
 - https://dummyjson.com/products
 
-<!-- !!! Login Info !!! -->
+### Login Info
 
 Username: emilys  
 Password: emilyspass
-
-<!-- !!! Login Info !!! -->
 
 Author:
 
