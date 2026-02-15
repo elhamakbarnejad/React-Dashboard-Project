@@ -41,7 +41,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-between w-full max-w-6xl mx-auto shadow-2xl min-h-screen overflow-hidden m-0 dark:bg-gray-600 rounded-xl ">
+      <div className="flex flex-col items-center justify-between w-full max-w-6xl mx-auto shadow-2xl min-h-screen overflow-hidden m-0 dark:bg-zinc-600 rounded-xl ">
         {" "}
         <Summeries />
         <div className="w-[90%] mt-15 mb-10 shadow-2xl rounded-xl overflow-hidden mx-auto ">

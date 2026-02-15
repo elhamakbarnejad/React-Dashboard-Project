@@ -24,7 +24,9 @@ const Landing = () => {
       <div className="space-y-5 mt-50">
         <h1 className="flex flex-col items-center justify-between *:flex *:items-center *:justify-center text-5xl font-Segoe gap-2">
           <div>
-            <span className="text-6xl">Prepin</span>
+            <span className="lg:text-6xl md:text-5xl sm:text-2xl text-xl">
+              Prepin
+            </span>
             <svg
               stroke="currentColor"
               fill="url(#starGradient)"
@@ -32,7 +34,7 @@ const Landing = () => {
               viewBox="0 0 256 256"
               focusable="false"
               aria-hidden="true"
-              className="chakra-icon prepin-2eyaeh"
+              className="chakra-icon prepin-2eyaeh lg:text-6xl md:text-5xl sm:text-2xl text-xl"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,21 +54,23 @@ const Landing = () => {
 
               <path d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"></path>
             </svg>
-            <span className="text-6xl bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+            <span className="lg:text-6xl md:text-5xl sm:text-2xl text-xl bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               AI Interview Coach
             </span>
           </div>
           <div>
-            <span className="text-6xl">Scales Your Career Services</span>
+            <span className="lg:text-6xl md:text-5xl sm:text-2xl text-xl">
+              Scales Your Career Services
+            </span>
           </div>
         </h1>{" "}
-        <p className="w-[40%] mx-auto  mt-10 text-center">
+        <p className="w-[60%] mx-auto  mt-10 text-justify sm:text-lg text-sm">
           AI-powered interview platform for bootcamps, universities, and career
           centers - deliver unlimited practice interviews with emotion tracking,
           readiness scoring, and white-label branding. Your students, our
           infrastructure.
         </p>
-        <div className="flex items-center justify-center w-[40%] mx-auto gap-5">
+        <div className="flex items-center justify-center w-[40%] mx-auto gap-5 md:flex-row flex-col ">
           <Button
             title="Login"
             className="bg-green-500 text-rose-500"
@@ -78,8 +82,8 @@ const Landing = () => {
             onclickHandler={goHomeHandler}
           />
         </div>
-        <div className="*:rounded-xl xl:flex-row flex flex-col items-stretch justify-center gap-4  mx-auto w-[70%]">
-          <div className="space-y-5 m-5 p-5 xl:w-1/2 w-full bg-white  flex flex-col items-center justify-between shadow relative">
+        <div className="*:rounded-xl xl:flex-row flex flex-col items-stretch justify-center gap-4  mx-auto w-[80%]">
+          <div className="space-y-5 m-2 p-5 xl:w-1/2 w-full bg-white  flex flex-col items-center justify-between shadow relative">
             <ContactCard />
           </div>
           <div className="xl:w-1/2 w-full ">
