@@ -33,20 +33,43 @@ const ProductsTable = ({ allProducts }) => {
         }}
       >
         <TableHead>
-          {tableProductHeadCells.map((item) => {
+          {/* {tableProductHeadCells.map((item) => {
             return <TableHeadCell key={item}>{item}</TableHeadCell>;
-          })}
+          })} */}
+          <TableHeadCell>{tableProductHeadCells[0]}</TableHeadCell>
+          <TableHeadCell>{tableProductHeadCells[1]}</TableHeadCell>
+          <TableHeadCell className="hidden xl:flex">
+            {tableProductHeadCells[2]}
+          </TableHeadCell>
+          <TableHeadCell className="hidden xl:flex">
+            {tableProductHeadCells[3]}
+          </TableHeadCell>
+          <TableHeadCell>{tableProductHeadCells[4]}</TableHeadCell>
+          <TableHeadCell className="hidden xl:flex">
+            {tableProductHeadCells[5]}
+          </TableHeadCell>
+          <TableHeadCell className="hidden xl:flex">
+            {tableProductHeadCells[6]}
+          </TableHeadCell>
         </TableHead>{" "}
         {LastProducts?.products?.map((product) => {
           return (
             <TableRow key={product?.id}>
               <TableRowCell>{product?.id}</TableRowCell>
-              <TableRowCell>{product?.title}</TableRowCell>
-              <TableRowCell>{product?.minimumOrderQuantity}</TableRowCell>
-              <TableRowCell>{product?.category}</TableRowCell>
-              <TableRowCell>{product?.price}</TableRowCell>
-              <TableRowCell>{product?.stock}</TableRowCell>
-              <TableRowCell>
+              <TableRowCell className="text-sm lg:text-md">
+                {product?.title}
+              </TableRowCell>
+              <TableRowCell className="hidden xl:flex">
+                {product?.minimumOrderQuantity}
+              </TableRowCell>
+              <TableRowCell className="hidden xl:flex">
+                {product?.category}
+              </TableRowCell>
+              <TableRowCell>{product?.price} $</TableRowCell>
+              <TableRowCell className="hidden xl:flex">
+                {product?.stock}
+              </TableRowCell>
+              <TableRowCell className="hidden xl:flex">
                 <div className="w-10 h-10 mx-auto">
                   <img
                     src={product?.thumbnail}

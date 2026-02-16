@@ -34,9 +34,22 @@ const UsersTable = ({ username }) => {
         }}
       >
         <TableHead>
-          {tableUsersHeadCells.map((item) => {
+          {/* {tableUsersHeadCells.map((item) => {
             return <TableHeadCell key={item}>{item}</TableHeadCell>;
-          })}
+          })} */}
+          <TableHeadCell>{tableUsersHeadCells[0]}</TableHeadCell>
+          <TableHeadCell>{tableUsersHeadCells[1]}</TableHeadCell>
+          <TableHeadCell>{tableUsersHeadCells[2]}</TableHeadCell>
+          <TableHeadCell>{tableUsersHeadCells[3]}</TableHeadCell>
+          <TableHeadCell className="hidden md:flex">
+            {tableUsersHeadCells[4]}
+          </TableHeadCell>
+          <TableHeadCell className="hidden md:flex">
+            {tableUsersHeadCells[5]}
+          </TableHeadCell>
+          <TableHeadCell className="hidden md:flex">
+            {tableUsersHeadCells[6]}
+          </TableHeadCell>
         </TableHead>{" "}
         {lastUsers?.users?.map((user) => {
           return (
@@ -45,17 +58,21 @@ const UsersTable = ({ username }) => {
               <TableRowCell>{user.firstName}</TableRowCell>
               <TableRowCell>{user.lastName}</TableRowCell>
               <TableRowCell>{user.age}</TableRowCell>
-              <TableRowCell>{user.gender}</TableRowCell>
+              <TableRowCell className="hidden md:flex">
+                {user.gender}
+              </TableRowCell>
               <TableRowCell>
-                <div className="w-10 h-10 flex items-center justify-center">
+                <div className="text-center items-center justify-center hidden md:flex ">
                   <img
                     src={user.image}
                     alt="Image"
-                    className="rounded-full object-cover"
+                    className="rounded-full object-cover w-10 h-10"
                   />
                 </div>
               </TableRowCell>
-              <TableRowCell>{user.role}</TableRowCell>
+              <TableRowCell className="hidden md:flex">
+                {user.role}
+              </TableRowCell>
             </TableRow>
           );
         })}
